@@ -1,0 +1,144 @@
+// main: ../style.less
+
+.team__item {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0 70px;
+}
+
+.team__right {
+    width: 400px;
+}
+
+.team__rightUP {
+    text-align: right;
+}
+
+.team__name {
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: @title;
+    
+    letter-spacing: .04em;   
+}
+
+.team__profession {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 26px;
+    color: @text;
+}
+
+.team__text {
+    font-size: 14px;
+    font-weight: 400;
+    
+    letter-spacing: .05em;
+    line-height: 26px;
+    
+    color: @text;
+    padding: 20px 0 35px;
+}
+
+.team__percentage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__number {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    
+    letter-spacing: .1em;
+    
+    color: @text;
+}
+
+.team__skill {
+    list-style: none;
+    padding-bottom: 35px;
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+
+        text-transform: uppercase;
+        letter-spacing: .1em;
+
+        color: @text;
+        padding-bottom: 9px;
+    }
+    
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+.lower {
+    background: #e1e4e9;
+    display: block;
+    height: 4px;
+
+    & .branding,
+    & .web,
+    & .user {
+        height: 4px;
+        float: left;
+        background: #19bd9a;
+    }
+
+    & .branding {
+        width: 80%;
+    }
+
+    & .web {
+        width: 65%;
+    }
+
+    & .user {
+        width: 75%;
+    }
+}
+
+.team__footer {
+    background: url(/img/teammate__footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+}
+
+.team__title {
+    font-size: 20px;
+    font-weight: 400;
+    
+    letter-spacing: .04em;
+    color: @white;
+    
+    padding: 40px 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

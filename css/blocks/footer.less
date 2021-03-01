@@ -1,0 +1,81 @@
+// main: ../style.less
+
+.footer {
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.footer__name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+    color: #323a45;
+    padding-top: 70px;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    
+    letter-spacing: .04em;
+    color: @text;
+    
+    padding-top: 23px;
+}
+
+.footer__icon {
+
+    padding: 30px 0 50px;
+}
+
+.footer__link {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color .2s linear;
+    text-decoration: none;
+
+    &--fb {
+        color: #3b5998;
+
+        &:hover {
+            color: darken(#3b5998, 20%);
+        }
+    }
+
+    &--tw {
+        color: #26a6d1;
+
+        &:hover {
+            color: darken(#26a6d1, 20%);
+        }
+    }
+
+    &--in {
+        color: #0e76a8;
+
+        &:hover {
+            color: darken(#0e76a8, 20%);
+        }
+    }
+
+    &--inst {
+        color: #3f729b;
+
+        &:hover {
+            color: #2e4f6a;
+        }
+    }
+
+    &--vim {
+        color: #86c9ef;
+
+        &:hover {
+            color: #5f8aa3;
+        }
+    }
+}
+
+
+

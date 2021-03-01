@@ -1,0 +1,153 @@
+// main: ../style.less
+
+
+
+// general styles
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+
+// team slider 
+
+.team__slider {
+    padding-bottom: 40px;
+
+    & .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .slick-dots li {
+
+        list-style: none;
+        margin: 0 10px;
+
+        button {
+            font-size: 0;
+            padding: 0;
+            
+            background-color: transparent;
+            border: 1px solid @general;
+            outline: none;
+
+            height: 12px;
+            width: 12px;
+
+            border-radius: 50%;
+
+        }
+
+        &.slick-active button {
+
+            background-color: @general;
+        }
+    }
+}
+
+// testimonials slider
+
+
+.testimonial__slider {
+
+    & .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 20px 0 30px;
+        margin: 0;
+
+        li {
+            list-style: none;
+            margin: 0 10px;
+
+            &.slick-active button {
+                background-color: @general;
+            }
+
+            button {
+                font-size: 0;
+                padding: 0;
+                
+                background-color: transparent;
+                border: 1px solid @general;
+                outline: none;
+
+                height: 12px;
+                width: 12px;
+                
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+// blog slider
+.blog__slider {
+    position: relative;
+
+    & .slick-track {
+        display: block;
+    }
+
+    & .slick-dots {
+        position: absolute;
+        top: 40%;
+        right: 0;
+
+        li {
+
+            list-style: none;
+            margin: 0 10px;
+
+            &.slick-active button {
+                background-color: @quoteCol;
+            }
+
+            button {
+                font-size: 0;
+                padding: 0;
+                background-color: transparent;
+                border: 1px solid #abacac;
+                outline: none;
+
+                height: 12px;
+                width: 12px;
+
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

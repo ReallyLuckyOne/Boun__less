@@ -1,0 +1,127 @@
+// main: ../style.less
+
+.price {
+    background: #f3f3f3;
+    padding-bottom: 80px;
+}
+.price__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding: 0 160px;
+}
+
+.price__item {
+    width: 235px;
+    height: 300px;
+    background: @white;
+
+    position: relative;
+
+    &:hover .price__title {
+        transform: translate3d(0, 233px, 0);
+        transition: transform .3s linear;
+
+        background: @general;
+    }
+
+    &:hover .price__number,
+    &:hover .price__duration {
+        display: none;
+    }
+
+    &:hover .price__name {
+        opacity: 1;
+        transition: opacity .5s linear;
+    }
+
+}
+
+.price__front {
+    text-align: center;
+}
+
+.price__title {
+    font-size: 20px;
+    font-weight: 700;
+    
+    text-transform: uppercase;
+    padding: 25px 0 25px;
+
+    letter-spacing: .04em;
+    cursor: pointer;
+    color: @white;
+    background: @general;
+    
+    transition: background .5s linear; 
+}
+
+.price__number {
+    font-size: 40px;
+    font-weight: 700;
+
+    padding-top: 65px;
+    
+    color: @general;  
+}
+
+.price__duration {
+    font-size: 20px;
+    font-weight: 400;
+
+    color: @text;
+    letter-spacing: .05em;
+}
+
+.price__back {
+    position: absolute;
+    top: 0;
+
+    li {
+        list-style: none;
+        padding: 0 0 16px 30px;
+
+        &:first-child {
+            padding-top: 15px;
+        }
+    }
+}
+
+.price__name {
+    font-size: 14px;
+    font-weight: 400;
+    
+    letter-spacing: .04em;
+    color: @text;
+    
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

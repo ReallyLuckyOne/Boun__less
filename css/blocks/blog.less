@@ -1,0 +1,92 @@
+// main: ../style.less
+
+.blog {
+    background: url(/IMG/blog__background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+    blog__upper
+    blog__title
+    blog__subtitle
+blog__lower -> blog__content
+blog__caption -> blog__title
+blog__subcaption -> blog__subtitle
+*/
+.blog__item {
+    padding-bottom: 60px;
+}
+
+.blog__content {
+    width: 54%;
+    padding-left: 70px;
+}
+
+.blog__title {
+    font-size: 20px;
+    font-weight: 400;
+    
+    letter-spacing: .04em;
+    color: #e1e4e9;
+}
+
+.blog__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: @text;
+    padding-top: 12px;
+
+    span {
+        color: @general;
+    }
+}
+
+.blog__stat {
+    display: flex;
+    padding-top: 20px;
+}
+
+.blog__num {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    
+    letter-spacing: .1em;
+    color: @title;
+    
+    &--com,
+    &--share {
+        padding-left: 6px;
+    }
+}
+
+/*blog__likes, blog__comments , blog__shares -> blog__num*/
+
+.blog__text {
+    font-size: 14px;
+    font-weight: 400;
+    
+    letter-spacing: .05em;
+    line-height: 26px;
+    
+    color: @text;
+    padding-top: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

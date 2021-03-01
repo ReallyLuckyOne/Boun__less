@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.map {
+    position: relative;
+
+    iframe {
+        display: block;
+    }
+
+    &:hover .map__text {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.map__text {
+    font-weight: 400;
+    font-size: 16px;
+    
+    letter-spacing: .04em;
+    
+    color: @white;
+    text-transform: uppercase;
+    
+    background-color: rgba(0,0,0,0.85);
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 1;
+    visibility: visible;
+    transition: all .2s linear;
+}
+

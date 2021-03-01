@@ -1,0 +1,92 @@
+// main: ../style.less
+
+.feature__content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.feature__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.feature__item {
+    position: relative;
+
+    &:hover {
+
+        & .feature__blur {
+            opacity: 0;
+        }
+
+        & .feature__photo {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
+}
+
+.feature__blur {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0,0,0,.85);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: opacity .2s linear;
+}
+
+.feature__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    
+    letter-spacing: .2em;
+    
+    text-transform: uppercase;
+    color: @white;  
+}
+
+.feature__footer {
+    background: url(/img/feature__footer.jpg) no-repeat center / cover;
+}
+
+
+.feature__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 30px 60px;
+}
+
+.feature__textFooter {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: @white;
+    letter-spacing: .04em;
+}
+
+
+
+
+
+
+
+
+

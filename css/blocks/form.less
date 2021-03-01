@@ -1,0 +1,84 @@
+// main: ../style.less
+
+/*
+
+contact__form - form
+contact__input - form__input
+contact__textarea - form__textarea
+contact__message - form__message
+
+*/
+
+.form {
+    padding: 60px 100px 70px;
+    width: 100%;
+}
+
+.form__input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: -10px;
+
+    input {
+        width: 30%;
+
+        padding: 15px 20px;
+        margin-left: 10px;
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        outline: none;
+        border: 1px solid #d8dce0;
+
+        color: @text;
+
+        &::placeholder {
+            color: @text;
+        }
+
+        &:focus {
+            box-shadow: 0 0 15px @general;
+        }
+    }
+}
+
+.form__textarea textarea {
+    width: 100%;
+    min-height: 180px;
+    height: 222px;
+
+    resize: vertical;
+    outline: none;
+
+    border: 1px solid #d8dce0;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: @text;
+
+    &::placeholder {
+        color: @text;
+    }
+
+    &:focus {
+        box-shadow: 0 0 15px @general;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
