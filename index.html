@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__upper">
                 <div class="header__logo">
@@ -21,19 +21,25 @@
                 </div>
 
                 <nav class="header__nav" id="nav">
-                    <a href="#hello" class="header__link">Hello</a>
-                    <a href="#about" class="header__link">About</a>
-                    <a href="#services" class="header__link">Services</a>
-                    <a href="#portfolio" class="header__link">Portfolio</a>
-                    <a href="#team" class="header__link">Team</a>
-                    <a href="#blog" class="header__link">Blog</a>
-                    <a href="#contacts" class="header__link">Contacs</a>
+                    <a href="#" class="header__link" data-scroll="#hello">Hello</a>
+                    <a href="#" class="header__link" data-scroll="#about">About</a>
+                    <a href="#" class="header__link" data-scroll="#services">Services</a>
+                    <a href="#" class="header__link" data-scroll="#portfolio">Portfolio</a>
+                    <a href="#" class="header__link" data-scroll="#team">Team</a>
+                    <a href="#" class="header__link" data-scroll="#blog">Blog</a>
+                    <a href="#" class="header__link" data-scroll="#contacts">Contacs</a>
                 </nav>
 
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">burger menu</span>
                 </button>
             </div>
+        </div>
+    </header>
+
+
+    <div class="home">
+        <div class="container">
             <div class="header__content">
                 <div class="header__title">
                     We Are Code Cafe
@@ -43,12 +49,12 @@
                 </div>
             </div>
             <div class="header__slider" id="onePoint">
-                <a href="#hello" class="header__icon">
+                <a href="#" class="header__icon" data-scroll="#hello">
                     <i class="fas fa-chevron-circle-down"></i>
                 </a>
             </div>
         </div>
-    </header>
+    </div>
 
     <section class="about" id="hello">
         <div class="container">
@@ -63,7 +69,12 @@
                         provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
                         dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
                     </div>
-                    <a href="#" class="btn btn--about">Read More</a>
+                    <button class="btn btn--about readMore">Read More</button>
+                    <div class="addInfo">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto id vel dicta, inventore debitis ipsam accusantium quia, illum harum pariatur dolor ex dolore recusandae commodi eligendi qui excepturi autem aperiam!
+                        </p>
+                    </div>
                 </div>
                 <div class="about__photo">
                     <img src="/img/about__ipad.png" alt="Ipad">
@@ -180,7 +191,7 @@
                 <div class="feature__textFooter">
                     At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis
                 </div>
-                <a class="btn btn--feature" href="#popup__additional">Submit Now</a>
+                <a class="btn btn--feature" href="#" data-scroll="#contacts">Submit Now</a>
             </div>
         </div>
     </div>
@@ -350,21 +361,21 @@
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                 </div>
             </div>
-            <nav class="portfolio__nav">
-                <a href="#" class="btn btn--port">All works</a>
-                <a href="#" class="btn btn--port">Print</a>
-                <a href="#" class="btn btn--port">Identity</a>
-                <a href="#" class="btn btn--port">Branding</a>
-                <a href="#" class="btn btn--port">Web</a>
-                <a href="#" class="btn btn--port">HTML</a>
-                <a href="#" class="btn btn--port">Wordpress</a>
+            <nav class="portfolio__nav" id="portNav">
+                <button class="btn btn--port actPort" onclick="filterSelection('all')">All works</button>
+                <button class="btn btn--port" onclick="filterSelection('Print')">Print</button>
+                <button class="btn btn--port" onclick="filterSelection('Identity')">Identity</button>
+                <button class="btn btn--port" onclick="filterSelection('Branding')">Branding</button>
+                <button class="btn btn--port" onclick="filterSelection('Web')">Web</button>
+                <button class="btn btn--port" onclick="filterSelection('HTML')">HTML</button>
+                <button class="btn btn--port" onclick="filterSelection('Wordpress')">Wordpress</button>
             </nav>
-            
+
 
             <div class="portfolio__content">
-                
+
                 <div class="portfolio__col">
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Print">
                         <img src="/img/portfolio/1.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -383,7 +394,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Identity">
                         <img src="/img/portfolio/5.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -402,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Branding">
                         <img src="/img/portfolio/9.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -422,9 +433,9 @@
                         </div>
                     </div>
                 </div> <!-- FIRST COLUMN -->
-                
+
                 <div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Print">
                         <img src="/img/portfolio/2.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -443,7 +454,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Identity">
                         <img src="/img/portfolio/6.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -462,7 +473,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Branding">
                         <img src="/img/portfolio/10.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -482,9 +493,9 @@
                         </div>
                     </div>
                 </div> <!-- SECOND COLUMN -->
-                
+
                 <div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Web">
                         <img src="/img/portfolio/3.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -503,7 +514,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item HTML">
                         <img src="/img/portfolio/7.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -522,7 +533,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Wordpress">
                         <img src="/img/portfolio/11.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -542,9 +553,9 @@
                         </div>
                     </div>
                 </div> <!-- THIRD COLUMN -->
-                
+
                 <div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Web">
                         <img src="/img/portfolio/4.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -563,7 +574,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item HTML">
                         <img src="/img/portfolio/8.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -582,7 +593,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__item">
+                    <div class="portfolio__item Wordpress">
                         <img src="/img/portfolio/12.jpg" alt="">
                         <div class="portfolio__blur">
                             <div class="portfolio__title">
@@ -602,7 +613,7 @@
                         </div>
                     </div>
                 </div> <!-- FOURTH COLUMN -->
-           
+
             </div>
 
 
@@ -611,7 +622,7 @@
                     <div class="portfolio__underText">
                         At vero eos et <b>accusamus</b> et iusto odio <b>dignissimos</b> ducimus qui
                     </div>
-                    <a class="btn btn--portfooter" href="#">Start Project</a>
+                    <a class="btn btn--portfooter" href="#" data-scroll="#contacts">Start Project</a>
                 </div>
             </div>
 
@@ -771,7 +782,7 @@
             <div class="team__title">
                 Already Loved Us? Let’s talk!
             </div>
-            <a href="#" class="btn btn--team">Contact Us</a>
+            <a href="#" class="btn btn--team" data-scroll="#contacts">Contact Us</a>
         </div>
     </div>
 
@@ -847,7 +858,7 @@
         </div>
     </section>
 
-    <section class="blog" id="blog">
+    <section class="blog">
         <div class="container">
             <div class="blog__slider">
 
@@ -1115,16 +1126,26 @@
 
     <div class="container">
 
-        <form action="#" class="form">
+        <form action="#" class="form" id="fContact">
             <div class="form__input">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Email address">
-                <input type="text" placeholder="Subject">
+                <div class="form__item">
+                    <input type="text" placeholder="Your name" class="
+                _req">
+                </div>
+                <div class="form__item">
+                    <input type="email" placeholder="Email address" class="
+                _req _email">
+                </div>
+                <div class="form__item">
+                    <input type="text" placeholder="Subject" class="
+                _req">
+                </div>
             </div>
             <div class="form__textarea">
-                <textarea></textarea>
+                <textarea class="
+                _req"></textarea>
             </div>
-            <button class="btn btn--contact">submit now</button>
+            <button type="submit" class="btn btn--contact">submit now</button>
         </form>
 
     </div>
@@ -1169,12 +1190,14 @@
     <a href="#" class="go__top" id="go__top">
         <i class="fas fa-arrow-alt-circle-up"></i>
     </a>
-       
+
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/slick.min.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/valid.js"></script>
+    <script src="/js/filter.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/slider.js"></script>
 
-</body>
-</html>
+</body></html>

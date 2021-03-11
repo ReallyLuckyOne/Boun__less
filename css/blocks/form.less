@@ -14,6 +14,11 @@ contact__message - form__message
     width: 100%;
 }
 
+.form__item {
+    width: 30%;
+    margin-left: 10px;
+}
+
 .form__input {
     display: flex;
     justify-content: space-between;
@@ -21,10 +26,9 @@ contact__message - form__message
     margin-left: -10px;
 
     input {
-        width: 30%;
+        width: 100%;
 
         padding: 15px 20px;
-        margin-left: 10px;
 
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -52,10 +56,10 @@ contact__message - form__message
 
     resize: vertical;
     outline: none;
+    display: block;
 
     border: 1px solid #d8dce0;
     padding: 15px 20px 15px 20px;
-    margin-bottom: 20px;
 
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -73,6 +77,9 @@ contact__message - form__message
 }
 
 
+._error {
+    box-shadow: 0 0 15px red;
+}
 
 
 

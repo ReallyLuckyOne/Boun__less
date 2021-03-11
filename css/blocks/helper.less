@@ -1,12 +1,12 @@
 // main: ../style.less
 
-.section__content {           
+.section__content {
     max-width: 500px;
     width: 100%;
-    
+
     text-align: center;
     margin: 0 auto;
-    
+
     &--blog {
         text-align: left;
         margin: 0;
@@ -28,7 +28,7 @@
     &--sub {
         color: @white;
     }
-    
+
 }
 
 .section__subtitle {
@@ -47,7 +47,27 @@
     }
 }
 
+.addInfo {
+    margin-top: 20px;
+    background-color: transparent;
 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s linear;
 
+    p {
+        font-size: 14px;
+        font-weight: 400;
 
+        padding: 10px;
 
+        letter-spacing: .05em;
+        line-height: 26px;
+        color: @text;
+    }
+}
+
+.actReadMore {
+    color: @white;
+    background-color: @black;
+}
