@@ -37,7 +37,7 @@ function RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 var portNav = document.getElementById("portNav");
-var btns = portNav.getElementsByClassName("btn");
+var btns = portNav.getElementsByClassName("port");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("actPort");
@@ -45,3 +45,11 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " actPort";
   });
 }
+
+
+
+
+
+
+
+
